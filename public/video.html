@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+ <!-- <script>
+    if (created = false) {
+        let check=document.querySelector('.slider').style.visibility="hidden";
+        console.log("check:-"+check);
+    }else {
+        let check1=document.querySelector('.slider');
+        console.log("check1:-"+check1);
+        } -->
+</script>
+
+<body>
+<!-- <div>
+     <button type="button" onclick="zoomMessage()">
+        Zoom-In
+    </button>
+      
+    <button type="button" onclick="zoomMessage()"> 
+        Zoom-Out
+    </button>
+</div> -->
+    <div id="chatcontainer">
+        <h1>Video Chat</h1>
+        <div id="show">s</div>
+        <div id="show1">s1</div>
+        <div id="show2">s2</div>
+        <div id="show3">s3</div>
+        <div id="container">
+            
+            <input type="range" id="lslid" class="slider" min="0" max="50" onchange="zoomControl()">
+          <div>Locallly</div>            
+            <video id="local"></video>
+
+            <input type="range" id="lsli" class="zoom1" onchange="zoomMessage()">
+
+          <div>Remote</div>
+            <!-- <input type="range" id="rsli"  class="slider"> -->
+            <video src="" id="remote" onclick="openFullscreen()"></video>
+
+        </div>
+        <div>
+            <video style="width:30%;"  src="" class="zoom"></video>
+            <video style="width:30%;"   src="" class="zooms"></video>
+        </div>
+   
+    </div>
+    <script src="js/face-api.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script>
+       document.getElementById("show").innerHTML= document.getElementById("lsli").value;
+       document.getElementById("show1").innerHTML= document.getElementById("rsli").value;
+    </script> -->
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+
+<body>
+<!-- <div>
+     <button type="button" onclick="zoomMessage()">
+        Zoom-In
+    </button>
+      
+    <button type="button" onclick="zoomMessage()"> 
+        Zoom-Out
+    </button>
+</div> -->
+    <!-- <div id="chatcontainer">
+        <h1>Video Chat</h1>
+        <div id="container">
+            
+          
+            <input type="range" id="lsli" class="zoom1" onchange="zoomMessage()">
+            <video id="local"></video>
+           
+            <input type="range" id="rsli"  class="slider"  onchange="zoomMessage()">
+            <video src="" id="remote" onclick="openFullscreen()"></video>
+               
+        </div>
+        <div>
+            <video style="width:30%;" autoplay src="" class="zoom"></video>
+            <video style="width:30%;" autoplay  src="" class="zooms"></video>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+       document.getElementById("show").innerHTML= document.getElementById("lsli").value;
+       document.getElementById("show1").innerHTML= document.getElementById("rsli").value;
+    </script>
+    <div id="show"></div>
+    <div id="show1"></div>
+</body>
+
+</html> --> -->
